@@ -1,0 +1,65 @@
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+    background-color: #4444;
+    position: relative;
+    padding-bottom: 8rem;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6266E1;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    color: #ffff;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+section article {
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    margin: 3rem 3rem;
+    padding: 0.25rem 0;
+}
+
+section article h2{
+    font-size: 1.5rem;
+    margin: 3rem 10rem;
+}
+
+section article p {
+    color: #7C8080;
+    font-size: 1rem;
+    margin: 0.5rem 10rem;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    position: absolute;
+    bottom: 0;
+    width: 92.92%;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration-color: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
