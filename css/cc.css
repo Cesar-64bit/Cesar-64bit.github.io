@@ -41,6 +41,11 @@ section article h4 {
     margin: 1rem 10rem;
 }
 
+section article h3 {
+    text-align: left;
+    margin: 1rem 10rem;
+}
+
 section article p {
     color: #7C8080;
     font-size: 1rem;
