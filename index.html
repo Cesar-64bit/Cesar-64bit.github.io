@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Mi blog personal</title>
+    <title>César Bernal</title>
     <script src="https://kit.fontawesome.com/c00df74bc0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <style>
@@ -80,6 +80,10 @@
             text-align: justify;
         }
 
+        .intro {
+            text-align: center;
+        }
+
         div img {
             margin-bottom: 1rem;
             text-align: center;
@@ -112,7 +116,7 @@
             margin: 10px;
             padding: 20px;
             width: 300px;
-            height: 400px;
+            height: 450px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -124,11 +128,10 @@
         }
 
         .card__image {
-            background-image: url('/img/hardware-house.PNG');
             background-size: cover;
             background-position: center;
             border-radius: 4px;
-            height: 200px;
+            height: 163.2px;
         }
 
         .card__title {
@@ -144,22 +147,25 @@
 
         .card__content {
             text-align: center;
+            width: 258px;
+            height: 136.8px;
         }
 
         .card__button {
-            background-color: #007bff;
+            background-color: #eb636b;
             border: none;
             border-radius: 4px;
             color: #fff;
             cursor: pointer;
             font-size: 16px;
             padding: 10px;
+            margin: 5px;
             transition: background-color 0.3s ease-in-out;
             width: 100%;
         }
 
         .card__button:hover {
-            background-color: #0056b3;
+            background-color: #e63244;
         }
 
         footer {
@@ -182,7 +188,6 @@
         </nav>
         <h1>About me</h1>
     </header>
-
     <main>
         <article>
             <div class="perfil">
@@ -190,33 +195,18 @@
             </div>
             <div class="name">Cesar Bernal</div>
             <br>
-            <p class="bibliography">
-                Hello, my name is Cesar Oswaldo Bernal Sanchez and this is my blog. I will talk a little
-                about myself.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla ipsum ullamcorper arcu
-                fermentum cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Praesent vitae tincidunt enim. Proin a urna consectetur, aliquet velit sit amet, tristique orci.
-                Maecenas vestibulum justo eget magna maximus tristique. Sed ornare diam orci, et tincidunt massa posuere
-                ac. Maecenas tempor est sed lacus vulputate, et sagittis nunc ultricies. Sed rhoncus enim nisl, in
-                porttitor dolor vestibulum vel. Praesent eget dolor tempor, interdum sem ac, commodo augue. Nunc mattis
-                tempus orci et tincidunt. Aliquam egestas eros vitae augue ultricies gravida. Pellentesque gravida
-                commodo neque, ac fringilla urna consequat quis. Phasellus sagittis tortor id ipsum cursus, in pulvinar
-                leo fermentum. Quisque porttitor elit non dui maximus maximus. Aliquam dictum purus sed ante convallis
-                ultricies.
+            <div class="bibliography">
 
-                Cras eleifend imperdiet mi sed mollis. Mauris nec nisl in neque congue porttitor. Pellentesque congue
-                ornare venenatis. Nunc scelerisque maximus porttitor. Vestibulum a ligula a sem efficitur tristique vel
-                eget ante. Maecenas faucibus nec felis ut malesuada. Donec tristique viverra commodo. Proin at odio
-                pretium, semper est in, maximus sapien. Donec maximus metus diam, at sollicitudin metus bibendum quis.
-
-                Curabitur ac faucibus erat. Duis ac arcu rhoncus, porttitor risus nec, pulvinar augue. Sed pulvinar
-                libero at quam vestibulum, et faucibus purus tincidunt. In vel mauris ullamcorper, efficitur sem
-                posuere, pellentesque nisl. Aenean a consequat ante, id congue nunc. Donec suscipit purus consequat
-                iaculis semper. Nunc quis condimentum eros, vel vehicula neque. Morbi blandit elit purus, a blandit
-                augue vehicula sit amet. Sed justo enim, consequat in scelerisque venenatis, tincidunt at lorem. Nullam
-                ac laoreet est. Pellentesque eleifend sollicitudin lorem, non sodales sem consequat vitae. Phasellus
-                quis purus finibus, accumsan diam nec, aliquet erat. Donec scelerisque malesuada dui quis laoreet.
-                Aliquam vel elit tempus, malesuada ipsum sed, efficitur sem. Nam pretium nisi id rutrum porta.</p>
+                <p class="intro">Hello, my name is Cesar Oswaldo Bernal Sanchez. In this web I will talk a little about
+                    myself.</p>
+                <br>
+                <p> I was born in Mazatlan Sinaloa, Mexico. I am currently (2023) studying Information Technology
+                    Engineering at the <a href="http://www.upsin.edu.mx/" target="_blank"
+                        style="text-decoration: none;">Universidad Politecnica de
+                        Sinaloa (UPSIN)</a>. I consider myself a responsible and honest person, and I am able to adapt
+                    to work teams quite easily. I usually share my ideas.
+                </p>
+            </div>
         </article>
     </main>
 
@@ -226,7 +216,7 @@
 
     <div class="cards-container">
         <div class="card">
-            <div class="card__image"></div>
+            <div class="card__image" style="background-image: url('/img/hardware-house.PNG');"></div>
             <div class="card__content">
                 <h2 class="card__title">Hardware House</h2>
                 <p class="card__text">
@@ -236,6 +226,22 @@
             </div>
             <a class="card_a" href="http://alejandrolizarraga.tech/" target="_blank">
                 <button class="card__button">Go to site</button>
+            </a>
+            <a class="card_a" href="https://gitlab.com/tai-ft-83/hardware-house" target="_blank">
+                <button class="card__button">Go to repository</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="card__image" style="background-image: url('/img/De-Mar.png');"></div>
+            <div class="card__content">
+                <h2 class="card__title">De Mar</h2>
+                <p class="card__text">
+                    This project was built with Java and MySQL.
+                </p>
+            </div>
+            <a class="card_a" href="https://github.com/Cesar-64bit/DeMar" target="_blank">
+                <button class="card__button">Go to repository</button>
             </a>
         </div>
     </div>
