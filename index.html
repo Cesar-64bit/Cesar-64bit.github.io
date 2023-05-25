@@ -57,12 +57,34 @@
                     problems in the mentioned languages (you can check my profile on <a
                         href="https://www.codechef.com/users/pyke99" target="_blank"
                         style="text-decoration: none; color: #e63244">CodeChef</a>). I enjoy data structures and
-                    algorithms, and I often read articles about them. Oh, and occasionally, I have written about <a
-                        href="/pdf/Estructura de datos.pdf" target="_blank"
-                        style="text-decoration: none; color: #e63244;">data
-                        structures and algorithms</a> too.
+                    algorithms, and I often read articles about them. I also feel comfortable using other programming
+                    languages such as Java and Python.
                 </p>
             </div>
+            <div class="boton">
+                <button onclick="translateContent()" id="translateButton">Read in Spanish</button>
+            </div>
+
+            <script>
+                function translateContent() {
+                    const button = document.getElementById("translateButton");
+                    const text = document.getElementsByClassName("bibliography")[0];
+
+                    if (button.textContent === "Read in Spanish") {
+                        text.innerHTML = `<p class="intro">Hola, mi nombre es Cesar Oswaldo Bernal Sanchez. En esta web hablaré un poco sobre mí.</p>
+            <br>
+            <p>Nací en Mazatlán, Sinaloa, México. Actualmente (2023) estoy estudiando Ingeniería en Tecnologías de la Información en la <a href="http://www.upsin.edu.mx/" target="_blank" style="text-decoration: none; color: #e63244;">Universidad Politécnica de Sinaloa (UPSIN)</a>. Me considero una persona responsable y honesta, y tengo facilidad para adaptarme a equipos de trabajo.</p>
+            <p>Me interesé en la informática cuando estaba en la escuela secundaria. Mi primer lenguaje de programación fue C#. Mi curiosidad me llevó a probar C/C++ y comencé a hacer programación competitiva, resolviendo muchos problemas en los lenguajes mencionados (puedes ver mi perfil en <a href="https://www.codechef.com/users/pyke99" target="_blank" style="text-decoration: none; color: #e63244;">CodeChef</a>). Disfruto de las estructuras de datos y los algoritmos, y a menudo leo artículos sobre ellos. También me siento cómodo utilizando otros lenguajes de programación como Java y Python.</p>`;
+                        button.textContent = "Read in English";
+                    } else {
+                        text.innerHTML = `<p class="intro">Hello, my name is Cesar Oswaldo Bernal Sanchez. In this web I will talk a little about myself.</p>
+            <br>
+            <p> I was born in Mazatlan Sinaloa, Mexico. I am currently (2023) studying Information Technology Engineering at the <a href="http://www.upsin.edu.mx/" target="_blank" style="text-decoration: none; color: #e63244;">Universidad Politecnica de Sinaloa (UPSIN)</a>. I consider myself a responsible and honest person, and I am able to adapt to work teams quite easily.</p>
+            <p> I became interested in computer science when I was in high school. My first programming language was C#. My curiosity led me to try C/C++ and I started doing competitive programming, solving many problems in the mentioned languages (you can check my profile on <a href="https://www.codechef.com/users/pyke99" target="_blank" style="text-decoration: none; color: #e63244;">CodeChef</a>). I enjoy data structures and algorithms, and I often read articles about them. I also feel comfortable using other programming languages such as Java and Python.</p>`;
+                        button.textContent = "Read in Spanish";
+                    }
+                }
+            </script>
         </article>
     </main>
 
