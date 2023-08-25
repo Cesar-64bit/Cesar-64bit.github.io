@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background: linear-gradient(to bottom right, #3498db, #9b59b6);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.terminal {
+    background-color: #000000;
+    border: 1px solid #333333;
+    width: 90%;
+    /* Ancho relativo */
+    max-width: 800px;
+    /* Ancho máximo */
+    height: 400px;
+    /* Altura predefinida */
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.terminal-titlebar {
+    background-color: #333333;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+    border-bottom: 1px solid #666666;
+}
+
+.terminal-title {
+    font-weight: bold;
+}
+
+.terminal-button-container {
+    display: flex;
+    gap: 5px;
+}
+
+.terminal-button {
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.terminal-button:hover {
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 3px;
+}
+
+.terminal-content {
+    flex-grow: 1;
+    background-color: #000000;
+    padding: 20px;
+    overflow: auto;
+    font-size: 18px;
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #000000;
+}
+
+.terminal-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 5px;
+}
+
+.terminal-content::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+.terminal-content a {
+    color: #3498db;
+    /* Cambia el color de los enlaces */
+    text-decoration: none;
+    border-bottom: 1px dashed #3498db;
+    /* Agrega un subrayado punteado */
+    transition: border-bottom 0.2s;
+}
+
+.terminal-content a:hover {
+    border-bottom: 1px solid #3498db;
+    /* Cambia a un subrayado sólido al pasar el mouse */
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+    display: inline-block;
+    width: 0.4em;
+    height: 1em;
+    background-color: #FFFFFF;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-icon {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.task-icon:hover {
+    color: #fff;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Otros estilos según tus necesidades */

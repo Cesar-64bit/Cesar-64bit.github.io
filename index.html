@@ -1,132 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>César Bernal</title>
-    <script src="https://kit.fontawesome.com/c00df74bc0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cesar Bernal</title>
 </head>
 
 <body>
-    <header class="parallax" id="aboutme" style="background-image: url('/img/aboutme.jpg');">
-        <nav>
-            <div class="menu-toggle">
-                <input type="checkbox" id="menu-checkbox">
-                <label for="menu-checkbox" class="menu-icon">&#9776;</label>
-                <ul class="menu">
-                    <li><a href="#aboutme">About</a></li>
-                    <li><a href="#portfolio">Porfolio</a></li>
-                    <li><a href="/pdf/Curriculum english.pdf" target="_blank">CV</a></li>
-                    <li><a href="https://github.com/Cesar-64bit" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                    <li><a href="https://gitlab.com/CesarUPSIN" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/c%C3%A9sar-oswaldo-bernal-s%C3%A1nchez-a9473924a/"
-                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                </ul>
+    <div class="terminal">
+        <div class="terminal-titlebar">
+            <div class="terminal-title">
+                <i class="fas fa-terminal"></i> César Bernal
             </div>
-        </nav>
-        <h1>About me</h1>
-    </header>
-    <main>
-        <article>
-            <div class="perfil">
-                <img src="/img/Foto_Perfil.jpeg" max-width="20%" height="225px">
+            <div class="terminal-button-container">
+                <div class="terminal-button terminal-minimize">
+                    <i class="far fa-window-minimize"></i>
+                </div>
+                <div class="terminal-button terminal-maximize">
+                    <i class="far fa-window-maximize"></i>
+                </div>
+                <div class="terminal-button terminal-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
-            <div class="name">Cesar Bernal</div>
-            <br>
-            <div class="bibliography">
-
-                <p class="intro">Hello, my name is Cesar Oswaldo Bernal Sanchez. In this web I will talk a little about
-                    myself.</p>
-                <br>
-                <p> I was born in Mazatlan Sinaloa, Mexico. I am currently (2023) studying Information Technology
-                    Engineering at the <a href="http://www.upsin.edu.mx/" target="_blank"
-                        style="text-decoration: none; color: #e63244;">Universidad Politecnica de
-                        Sinaloa (UPSIN)</a>. I consider myself a responsible and honest person, and I am able to adapt
-                    to work teams quite easily.
-                </p>
-                <p>
-                    I became interested in computer science when I was in high school. My first programming language was
-                    C#. My curiosity led me to try C/C++ and I started doing competitive programming, solving many
-                    problems in the mentioned languages (you can check my profile on <a
-                        href="https://www.codechef.com/users/pyke99" target="_blank"
-                        style="text-decoration: none; color: #e63244">CodeChef</a>). I enjoy data structures and
-                    algorithms, and I often read articles about them. I also feel comfortable using other programming
-                    languages such as Java and Python.
-                </p>
-            </div>
-            <div class="boton">
-                <button onclick="translateContent()" id="translateButton">Read in Spanish</button>
-            </div>
-
-            <script>
-                function translateContent() {
-                    const button = document.getElementById("translateButton");
-                    const text = document.getElementsByClassName("bibliography")[0];
-
-                    if (button.textContent === "Read in Spanish") {
-                        text.innerHTML = `<p class="intro">Hola, mi nombre es Cesar Oswaldo Bernal Sanchez. En esta web hablaré un poco sobre mí.</p>
-            <br>
-            <p>Nací en Mazatlán, Sinaloa, México. Actualmente (2023) estoy estudiando Ingeniería en Tecnologías de la Información en la <a href="http://www.upsin.edu.mx/" target="_blank" style="text-decoration: none; color: #e63244;">Universidad Politécnica de Sinaloa (UPSIN)</a>. Me considero una persona responsable y honesta, y tengo facilidad para adaptarme a equipos de trabajo.</p>
-            <p>Me interesé en la informática cuando estaba en la escuela secundaria. Mi primer lenguaje de programación fue C#. Mi curiosidad me llevó a probar C/C++ y comencé a hacer programación competitiva, resolviendo muchos problemas en los lenguajes mencionados (puedes ver mi perfil en <a href="https://www.codechef.com/users/pyke99" target="_blank" style="text-decoration: none; color: #e63244;">CodeChef</a>). Disfruto de las estructuras de datos y los algoritmos, y a menudo leo artículos sobre ellos. También me siento cómodo utilizando otros lenguajes de programación como Java y Python.</p>`;
-                        button.textContent = "Read in English";
-                    } else {
-                        text.innerHTML = `<p class="intro">Hello, my name is Cesar Oswaldo Bernal Sanchez. In this web I will talk a little about myself.</p>
-            <br>
-            <p> I was born in Mazatlan Sinaloa, Mexico. I am currently (2023) studying Information Technology Engineering at the <a href="http://www.upsin.edu.mx/" target="_blank" style="text-decoration: none; color: #e63244;">Universidad Politecnica de Sinaloa (UPSIN)</a>. I consider myself a responsible and honest person, and I am able to adapt to work teams quite easily.</p>
-            <p> I became interested in computer science when I was in high school. My first programming language was C#. My curiosity led me to try C/C++ and I started doing competitive programming, solving many problems in the mentioned languages (you can check my profile on <a href="https://www.codechef.com/users/pyke99" target="_blank" style="text-decoration: none; color: #e63244;">CodeChef</a>). I enjoy data structures and algorithms, and I often read articles about them. I also feel comfortable using other programming languages such as Java and Python.</p>`;
-                        button.textContent = "Read in Spanish";
-                    }
-                }
-            </script>
-        </article>
-    </main>
-
-    <div class="parallax" style="background-image: url('/img/portfolio.jpg');" id="portfolio">
-        <h1>Portfolio</h1>
-    </div>
-
-    <div class="cards-container">
-        <div class="card">
-            <div class="card__image" style="background-image: url('/img/hardware-house.PNG');"></div>
-            <div class="card__content">
-                <h2 class="card__title">Hardware House</h2>
-                <p class="card__text">
-                    This project was built with HTML, CSS, JavaScript, NodeJS,
-                    ExpressJS, AWS.
-                </p>
-            </div>
-            <a class="card_a" href="http://alejandrolizarraga.tech/" target="_blank">
-                <button class="card__button">Go to site</button>
-            </a>
-            <a class="card_a" href="https://gitlab.com/tai-ft-83/hardware-house" target="_blank">
-                <button class="card__button">Go to repository</button>
-            </a>
         </div>
-
-        <div class="card">
-            <div class="card__image" style="background-image: url('/img/De-Mar.png');"></div>
-            <div class="card__content">
-                <h2 class="card__title">De Mar</h2>
-                <p class="card__text">
-                    This project was built with Java and MySQL.
-                </p>
-            </div>
-            <a class="card_a" href="https://github.com/Cesar-64bit/DeMar" target="_blank">
-                <button class="card__button">Go to repository</button>
-            </a>
+        <div class="terminal-content" id="terminal-content">
         </div>
     </div>
 
-    <footer>
-        <p>© Copyright 2023. Cesar Oswaldo Bernal Sanchez</p>
-    </footer>
+    <div class="taskbar">
+        <a href="https://www.linkedin.com/in/c%C3%A9sar-oswaldo-bernal-s%C3%A1nchez-a9473924a/" target="_blank"
+            class="task-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Cesar-64bit" target="_blank" class="task-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="task-icon"><i class="fas fa-file"></i></a>
+    </div>
+
+    <script>
+        const terminalContent = document.getElementById('terminal-content');
+        const textToType = [
+            "My name is Cesar Oswaldo Bernal Sanchez. <br> <br>"
+            + "I'm Information Technology Engineer. <br> <br>"
+            + "I enjoy programming in Java, C/C++, and backend development. "
+            + "I've also worked with embedded software, mainly using Arduino and C++. <br> <br>"
+            + "Contactme: <br> <br>"
+            + '<a href="https://www.linkedin.com/in/c%C3%A9sar-oswaldo-bernal-s%C3%A1nchez-a9473924a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> <br>'
+            + '<a href="https://github.com/Cesar-64bit" target="_blank"><i class="fab fa-github"></i> Github</a> <br>'
+            + '<a href="/pdf/CV-Cesar Bernal.pdf" target="_blank"><i class="fas fa-file"></i> CV</a><br><br>'
+            + " > Select an option"
+        ];
+
+        let currentCommandIndex = 0;
+        let currentCharIndex = 0;
+
+        function typeCommand() {
+            if (currentCommandIndex >= textToType.length) {
+                showMenu();
+                return;
+            }
+
+            const command = textToType[currentCommandIndex];
+            terminalContent.innerHTML = command.substring(0, currentCharIndex);
+
+            if (currentCharIndex < command.length) {
+                currentCharIndex++;
+                setTimeout(typeCommand, 15);
+            }
+        }
+
+        typeCommand();
+    </script>
 </body>
 
 </html>
