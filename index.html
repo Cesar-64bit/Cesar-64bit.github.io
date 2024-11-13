@@ -6,72 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Cesar Bernal</title>
+    <title>César Bernal - Portfolio</title>
 </head>
 
 <body>
-    <div class="terminal">
-        <div class="terminal-titlebar">
-            <div class="terminal-title">
-                <i class="fas fa-terminal"></i> César Bernal
-            </div>
-            <div class="terminal-button-container">
-                <div class="terminal-button terminal-minimize">
-                    <i class="far fa-window-minimize"></i>
-                </div>
-                <div class="terminal-button terminal-maximize">
-                    <i class="far fa-window-maximize"></i>
-                </div>
-                <div class="terminal-button terminal-close">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
+    <header>
+        <h1>César Bernal</h1>
+        <p class="subtitle">Backend Developer</p>
+        <p class="tech-stack">Java | Spring Boot | PostgreSQL</p>
+        <div class="header-links">
+            <a href="/pdf/CV- Cesar Bernal Spanish.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
+            <a href="https://github.com/Cesar-64bit" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/c%C3%A9sar-bernal-a9473924a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="terminal-content" id="terminal-content">
-        </div>
-    </div>
+    </header>
 
-    <div class="taskbar">
-        <a href="https://www.linkedin.com/in/c%C3%A9sar-bernal-a9473924a/" target="_blank" class="task-icon"><i
-                class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Cesar-64bit" target="_blank" class="task-icon"><i class="fab fa-github"></i></a>
-        <a href="/pdf/CV- Cesar Bernal Spanish.pdf" target="_blank" class="task-icon"><i class="fas fa-file"></i></a>
-    </div>
-
-    <script>
-        const terminalContent = document.getElementById('terminal-content');
-        const textToType = [
-            "My name is Cesar Oswaldo Bernal Sanchez. <br> <br>"
-            + "I'm Backend Developer. <br> <br>"
-            + "I enjoy programming in Java, C/C++. "
-            + "I've also worked with embedded software, mainly using Arduino and C++. <br> <br>"
-            + "Contactme: <br> <br>"
-            + '<a href="https://www.linkedin.com/in/c%C3%A9sar-bernal-a9473924a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> <br>'
-            + '<a href="https://github.com/Cesar-64bit" target="_blank"><i class="fab fa-github"></i> Github</a> <br>'
-            + '<a href="/pdf/CV- Cesar Bernal Spanish.pdf" target="_blank"><i class="fas fa-file"></i> CV</a><br><br>'
-            + " > Select an option"
-        ];
-
-        let currentCommandIndex = 0;
-        let currentCharIndex = 0;
-
-        function typeCommand() {
-            if (currentCommandIndex >= textToType.length) {
-                showMenu();
-                return;
-            }
-
-            const command = textToType[currentCommandIndex];
-            terminalContent.innerHTML = command.substring(0, currentCharIndex);
-
-            if (currentCharIndex < command.length) {
-                currentCharIndex++;
-                setTimeout(typeCommand, 15);
-            }
-        }
-
-        typeCommand();
-    </script>
+    <main>
+        <section class="portfolio">
+            <h2>Proyectos Personales</h2>
+            <div class="card">
+                <i class="fa fa-rocket card-icon" aria-hidden="true"></i>
+                <h3>Cúpula Celeste</h3>
+                <p>Sitio web para ver fotos del espacio</p>
+                <a href="https://cupula-celeste.com/" target="_blank" class="button">Ir al sitio</a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
