@@ -70,7 +70,6 @@ header h1 {
     align-items: center;
     width: 100%;
     max-width: 1000px;
-    padding: 0 20px;
 }
 
 .portfolio h2 {
@@ -131,4 +130,62 @@ header h1 {
 .button:hover {
     background-color: #2980b9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .subtitle, .tech-stack {
+        font-size: 1em;
+    }
+
+    .header-links {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .header-links a {
+        font-size: 1.3em;
+    }
+
+    .portfolio h2 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle, .tech-stack {
+        font-size: 0.9em;
+    }
+
+    .header-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .portfolio h2 {
+        font-size: 1.6em;
+    }
+
+    .card-icon {
+        font-size: 2em;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
 }
